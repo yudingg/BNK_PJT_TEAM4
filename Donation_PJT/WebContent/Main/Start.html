@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style scoped>
+    @import url("css/Start.css");
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function() {
+        $('.click').click(function() {
+            $('.cover').prop('style').animation = 'moveTop 1s ease-in-out'
+            setTimeout(() => {
+                location.href = 'Main.jsp'
+            }, 900)
+        })
+    })
+</script>
+</head>
+<body>
+    <div class="cover">
+        <button class="click">Start</button>
+    </div>
+</body>
+</html>
